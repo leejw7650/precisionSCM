@@ -177,7 +177,6 @@ validation
 test
 
 
-
 fit1 <- arima(c(train, validation), order = c(0,0,1), method = "ML")
 fit2 <- arima(c(train, validation), order = c(3,0,4), method = "ML")
 
@@ -189,6 +188,6 @@ title("ARIMA(3,0,4)") ; lines(lines(ts(test,start = n_train + 1),col = 'blue'))
 MSPE1 <- mean((prediction1[,2] - test)^2)
 MSPE2 <- mean((prediction2[,2] - test)^2)
 
-
+# New Line
 
 
